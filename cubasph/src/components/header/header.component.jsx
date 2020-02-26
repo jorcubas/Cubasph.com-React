@@ -6,14 +6,14 @@ import './header.styles.scss';
 const header = () => (
     <div className="header">
         <div className="header-elements">
-            <Link className="icon" to="#">
+            <Link className="icon" to="/">
                 CubasPH
             </Link>
             <div className="options">
                 <Link className="option" to="#">
                     Gallery
                 </Link>
-                <Link className="option" to="#">
+                <Link className="option" to="/about">
                     About
                 </Link>            
                 <Link className="option" to="#">
@@ -21,9 +21,6 @@ const header = () => (
                 </Link>
             </div>
         </div>
-        <div className="title1">
-            <h1>Landscape Photopgraphy</h1>
-        </div>                      
     </div>  
 
 );

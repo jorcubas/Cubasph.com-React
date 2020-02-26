@@ -1,23 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600,800&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
 .header {
-    font-family: 'Lato';
-    font-weight: 800;
-    height: 100vh;
-    width:100%;
+    
     margin:0%;
-    padding:0;
+    padding:1% 2%;
     overflow-x: hidden;
     overflow-y: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), 
-    url("https://lh3.googleusercontent.com/NtwZMEaD_NS6Qflx5KWjwzsSWvB9V_v7iz9t93rZ9mpAYNlrZfKC668-y5zkQT9E_AKgXLkgOkEVvOBYMUKCg7_fJH4pDzVk2i0xT0HSVDfLLYMp_Qj6DO8u3UuR_iR8LSYQmTWbgWIWpc42v62UMtSmzf8XJeGQMTKc1BxpnIOQZXZfRfsqy2Auf0c-EszY3qChy75iY1QV6w7bhPeZ68C71GybHJDXdgRa49dSRxyHj3zOKcy7odSmqB14PCHzWIduRZ7qp9VYo9AltEkTRfyggOaftjk0i23ArS3OWLbHfxG0UiX8wl10N9JN9ouBcOWdXdUtJgAfDi2Hkq7ugx-jBv-apASVEQ1b-xWZFIO1uqEOcKXH-XxpeY0VRNXTKP003xqydnhtrEBVtiWpwFO3raI_1RNb5mxAYPjFmFE837EHeT5MZmt_lkECgeTKzX9ya8itvhF48D1oy996tBYncywba4IDz7Pqj_x50ty7VBiS50-lggeO30G1wJrBEHQjc6tfi8xHh9F42-U7R3q_90ze2b5csJOaiBl5ElIaOWaRZ3dfRLl86dsnRItyVl_jnMhIylz0jSE51bE1XnzFNKlVZ0pK-Sbm6Jslsdx72TVolpQLu0wwpbM_EUpDWAHnE1YDawwU2GxU7MQGa9ujUArYXO0dN1L25W_2daObo6AL3zyLgQ=w1485-h990-no");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: #1e272e;
 
     .header-elements{
-        display: flex;        
+        display: flex;
 
         .icon {
             width: 100vh;
@@ -25,20 +16,17 @@
             display: flex;
             justify-content: flex-start;
             padding:0%;
-            margin: 2% 0% 0% 2%;
             cursor: pointer;
             text-decoration: none;
-            color: white;   
+            color: #d2dae2;   
             font-size: 140%;             
         }     
-        
+
         .options {
             width: 100vh;
             height: 0%;
             display: flex;
             justify-content: flex-end;
-            margin-top: 2%;
-            margin-left: 2%;        
             margin-right: 2%;  
     
     
@@ -48,49 +36,6 @@
                 text-decoration: none;
                 color: white;
             }
-        }        
-    }
-
-    .title1{
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: justify;
-        color:white;
-        font-size: 160%;
-
-        h1{
-            font-family: 'Montserrat';
-            padding: 0%;
-            margin-block-start: 0%;
-            margin-left: 40%;
-            margin-bottom: 15%;
-        }   
-    }
-
-    .title2{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: justify;    
-        color:white;
-        font-size: 100%;   
-        position: fixed;  
-        
-        h3 {
-            font-family: 'Montserrat';
-            font-weight: 600;
-            margin-left: 35%;
-            margin-bottom: 24%;
-            letter-spacing: 2px;
         }
     }
-
-
 }

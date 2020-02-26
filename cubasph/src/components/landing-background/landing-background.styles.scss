@@ -1,0 +1,29 @@
+.background-container {
+    height: 94vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://lh3.googleusercontent.com/NtwZMEaD_NS6Qflx5KWjwzsSWvB9V_v7iz9t93rZ9mpAYNlrZfKC668-y5zkQT9E_AKgXLkgOkEVvOBYMUKCg7_fJH4pDzVk2i0xT0HSVDfLLYMp_Qj6DO8u3UuR_iR8LSYQmTWbgWIWpc42v62UMtSmzf8XJeGQMTKc1BxpnIOQZXZfRfsqy2Auf0c-EszY3qChy75iY1QV6w7bhPeZ68C71GybHJDXdgRa49dSRxyHj3zOKcy7odSmqB14PCHzWIduRZ7qp9VYo9AltEkTRfyggOaftjk0i23ArS3OWLbHfxG0UiX8wl10N9JN9ouBcOWdXdUtJgAfDi2Hkq7ugx-jBv-apASVEQ1b-xWZFIO1uqEOcKXH-XxpeY0VRNXTKP003xqydnhtrEBVtiWpwFO3raI_1RNb5mxAYPjFmFE837EHeT5MZmt_lkECgeTKzX9ya8itvhF48D1oy996tBYncywba4IDz7Pqj_x50ty7VBiS50-lggeO30G1wJrBEHQjc6tfi8xHh9F42-U7R3q_90ze2b5csJOaiBl5ElIaOWaRZ3dfRLl86dsnRItyVl_jnMhIylz0jSE51bE1XnzFNKlVZ0pK-Sbm6Jslsdx72TVolpQLu0wwpbM_EUpDWAHnE1YDawwU2GxU7MQGa9ujUArYXO0dN1L25W_2daObo6AL3zyLgQ=w1485-h990-no");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    .title-text-box {
+        font-family: 'Lato';
+        font-weight: 100;
+        position: absolute;
+        top: 50%;
+        left: 64%;
+        transform: translate(-50%, -50%);
+
+        h1{
+            color: white;
+            font-size: 200%;
+            word-spacing: 4px;
+            letter-spacing: 2px;
+            padding:0%;
+        }
+    }
+}
+

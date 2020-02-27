@@ -3,6 +3,7 @@ import React from 'react';
 import './about.styles.scss';
 
 import Image from './Zermatt1.2.jpg';
+import ContactButton  from '../../components/contact-button/contact-button.component';
 
 const aboutPage = () => (
     <div className="about-info">
@@ -14,6 +15,7 @@ const aboutPage = () => (
             apasionan. Por lo tanto el poder tener una plataforma donde pueda vender mis fotografías siempre ha sido 
             un pequeño sueño mío. Por eso cree esta plataforma como página web donde se pueden cotizar mis 
             fotografías y enmarcarlas para diferentes ambientes que queden a imaginción de las personas.  </p>        
+            <ContactButton/>
         </div>
     </div>
 )

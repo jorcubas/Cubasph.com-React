@@ -2,10 +2,10 @@
 .header {
     
     margin:0%;
-    padding:1% 2%;
+    padding: 0.7% 3% ;
     overflow-x: hidden;
     overflow-y: hidden;
-    background-color: #1e272e;
+    background-color: black;
 
     .header-elements{
         display: flex;
@@ -18,7 +18,7 @@
             padding:0%;
             cursor: pointer;
             text-decoration: none;
-            color: #d2dae2;   
+            color: #fff;   
             font-size: 140%;             
         }     
 
@@ -34,6 +34,7 @@
                 padding: 0 15px;
                 cursor: pointer;
                 text-decoration: none;
+                font-size: 120%;
                 color: white;
             }
         }

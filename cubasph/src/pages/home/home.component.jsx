@@ -3,12 +3,12 @@ import React from 'react';
 import './home.styles.scss';
 
 import LandingBackground from '../../components/landing-background/landing-background.component';
-import Header from '../../components/header/header.component';
+import PrintsAd from '../../components/prints-ad/prints-ad.component';
 
 const HomePage = () => (
     <div>
         <LandingBackground/>    
-        <Header/>
+        <PrintsAd/>
     </div>
 );
 

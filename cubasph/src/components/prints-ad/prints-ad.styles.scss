@@ -1,0 +1,53 @@
+.printSection{
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+
+    .ImageArea{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            display: flex;
+            justify-content: flex-start;
+            max-width: 350px;
+            padding: 5% 0;
+            margin-left: 19%;
+        }
+
+
+        .title {
+            margin-right: 10%;;
+            h1{
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 18%; 
+                color: black;
+                font-size: 420%;
+                font-family: 'Lato';
+                letter-spacing: 2px;
+            }            
+        }        
+        
+    }
+}
+
+
+// .ImageArea{
+//     list-style: none;
+//     display: grid;
+//     grid-template-columns: repeat(6, 1fr);
+//     grid-column-gap: 5px;
+
+// }
+
+// img:nth-child(1){
+//     grid-column: 1/span 2;
+//     grid-row: 1/span 2;
+// }
+
+// img:nth-child(2){
+//     grid-column: 2/span 4;
+//     grid-row: 2/span 4;
+// }

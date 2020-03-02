@@ -2,14 +2,14 @@ import React from 'react';
 
 import './about.styles.scss';
 
-import Image from './Zermatt1.2.jpg';
+import Image from './Cubas1.jpg';
 import ContactButton  from '../../components/contact-button/contact-button.component';
 
 const aboutPage = () => (
     <div className="about-info">
         <img  src= {Image} alt="Profile Photo"/>
         <div className="text">
-            <h1>Conoce sobre Mi</h1>
+            <h1>Conoce Sobre Mi</h1>
             <p>Viajar y aventurar son cosas que siempre me han apasionado. Para mi el capturar un momento en el tiempo
             o un recuerdo es algo que no tiene precio. Las fotgrafías de paisajes son de las ftografías que mas me 
             apasionan. Por lo tanto el poder tener una plataforma donde pueda vender mis fotografías siempre ha sido 

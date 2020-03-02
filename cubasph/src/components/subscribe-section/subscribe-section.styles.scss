@@ -1,0 +1,30 @@
+.SubscribeSection{
+    width: 100%;
+    height: 70%;
+
+    .subscribe-space {
+        margin: 15% 22%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .subscribe-space-title {
+            font-family: "Lato";
+            font-size: 150%;
+        }
+
+        .subscribe-space-input{
+            padding: 5% 0% 0% 0%;
+
+            input{
+                font-size: 150%;
+            }
+
+            button{
+                margin: 10% 0% 0% 0%;
+                font-size: 110%;
+                border: none;
+            }
+        }
+    }
+}

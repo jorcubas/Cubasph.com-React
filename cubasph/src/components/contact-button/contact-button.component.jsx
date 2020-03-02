@@ -5,7 +5,7 @@ import './contact-button.styles.scss';
 const ContactButton = () => (
     <div className="contact-button">
         <button className="button">
-            Contact
+            Contactar
         </button>
     </div>
 );

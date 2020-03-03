@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import './sign-in.styles.scss';
 
@@ -29,7 +30,7 @@ class SignIn extends React.Component {
             console.log(error);
         }
 
-        this.setState({ email:'', password:'' });
+        // this.setState({ email:'', password:'' });
     }
 
 
@@ -46,7 +47,7 @@ class SignIn extends React.Component {
                 <div className="title">
                     <h1>Iniciar Sesión</h1>
                 </div>
-                <form onSubmit={this.future}>
+                <form onSubmit={this.handleSubmit}>
                     <FormInput
                         name="email"
                         type="email"
@@ -60,12 +61,21 @@ class SignIn extends React.Component {
                         type="password"
                         onChange={this.handleChange}
                         value={this.state.password}
-                        label="password"
+                        label="contraseña"
                         required
                     />
                     <div className="buttons">
                         <CustomButton type="submit" value="Submit Form">Iniciar Sesión</CustomButton>
                         <CustomButton onClick={ signInWithGoogle } isGoogleSignIn>Iniciar Sesión con Google</CustomButton>
+                    </div>
+                    <div className="RegisterTable">
+                        <h3>
+                            ¿Eres nuevo por aquí?
+                            <Link className="signUpLink" to="/signup">
+                                {' '}
+                                Registrate!
+                            </Link>
+                        </h3>
                     </div>
                 </form>
             </div>

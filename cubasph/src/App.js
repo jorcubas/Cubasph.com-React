@@ -6,6 +6,7 @@ import Header from './components/header/header.component.jsx';
 import aboutPage from './pages/about/about.component';
 import HomePage from './pages/home/home.component';
 import SignIn from './pages/sign-in/sign-in.component';
+import SignUp from './pages/sign-up/sign-up.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
 class App extends React.Component {
@@ -31,6 +32,7 @@ class App extends React.Component {
               ...snapShot.data()
             }
           });
+          console.log(this.state);
         });
       }
       else{
@@ -53,6 +55,7 @@ class App extends React.Component {
           <Route exact path='/' component={HomePage} />
           <Route exact path='/about' component={aboutPage} />
           <Route exact path='/signin' component={SignIn} />
+          <Route exact path='/signup' component={SignUp} />
         </Switch>
       </div>        
     )

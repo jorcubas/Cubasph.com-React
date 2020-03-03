@@ -44,7 +44,7 @@ class SignIn extends React.Component {
         return(
             <div className="SignInForm">
                 <div className="title">
-                    <h1>Sign In</h1>
+                    <h1>Iniciar Sesión</h1>
                 </div>
                 <form onSubmit={this.future}>
                     <FormInput
@@ -65,7 +65,7 @@ class SignIn extends React.Component {
                     />
                     <div className="buttons">
                         <CustomButton type="submit" value="Submit Form">Iniciar Sesión</CustomButton>
-                        <CustomButton onClick={ signInWithGoogle } isGoogleSignIn>Sign In with Google</CustomButton>
+                        <CustomButton onClick={ signInWithGoogle } isGoogleSignIn>Iniciar Sesión con Google</CustomButton>
                     </div>
                 </form>
             </div>

@@ -6,7 +6,7 @@ import Header from './components/header/header.component.jsx';
 import aboutPage from './pages/about/about.component';
 import HomePage from './pages/home/home.component';
 import SignIn from './pages/sign-in/sign-in.component';
-import { auth } from './firebase/firebase.utils';
+import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
 class App extends React.Component {
   constructor() {
@@ -20,10 +20,22 @@ class App extends React.Component {
   unsubscribeFromAuth = null;
 
   componentDidMount(){
-    auth.onAuthStateChanged(user => {
-      this.setState({currentUser: user});
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+      if(userAuth){
+        const userRef = await createUserProfileDocument(userAuth);
 
-      console.log(user);
+        userRef.onSnapshot(snapShot => {
+          this.setState({
+            currentUser: {
+              id: snapShot.id,
+              ...snapShot.data()
+            }
+          });
+        });
+      }
+      else{
+        this.setState({ currentUser: userAuth });
+      }      
     });
   }
 
@@ -36,7 +48,7 @@ class App extends React.Component {
   render() {
     return(
       <div>
-        <Header currentUser={this.state.currentUser} />
+        <Header currentUser={this.state.currentUser}/>
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route exact path='/about' component={aboutPage} />

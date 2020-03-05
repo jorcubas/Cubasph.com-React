@@ -8,6 +8,7 @@ import aboutPage from './pages/about/about.component';
 import HomePage from './pages/home/home.component';
 import SignIn from './pages/sign-in/sign-in.component';
 import SignUp from './pages/sign-up/sign-up.component';
+import GalleryPage from './pages/gallery/gallery.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
 
@@ -50,6 +51,7 @@ class App extends React.Component {
           <Route exact path='/about' component={aboutPage} />
           <Route exact path='/signin' render={() => this.props.currentUser ? (<Redirect to='/' />) : (<SignIn/>)} />
           <Route exact path='/signup' component={SignUp} />
+          <Route exact path='/gallery' component={GalleryPage}/>
         </Switch>
       </div>        
     )

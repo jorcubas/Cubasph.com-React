@@ -40,6 +40,25 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     return userRef;
 };
 
+export const convertGallerySnapshotToMap = (galleryCollection) => {
+    const itemCollection = galleryCollection.docs.map( doc =>  {
+        const {name, description, imageUrl, country, location} = doc.data();
+        return{
+            name, 
+            description,
+            imageUrl,
+            country,
+            location
+        }
+    });
+
+    console.log(itemCollection);
+    return itemCollection.reduce((accumulator, collection) => {
+        accumulator[collection.name.toLowerCase()] = collection;
+        return accumulator;
+    }, {});
+}
+
 firebase.initializeApp(config);
 
 export const auth = firebase.auth();

@@ -1,6 +1,6 @@
 import GalleryStateUpdateTypes from './gallery.types';
 
-export const galleryUpdateState = transformedCollection => ({
+export const galleryUpdateState = transformedGallery => ({
     type: GalleryStateUpdateTypes.GALLERY_STATE_UPDATE,
-    payload: transformedCollection
+    payload: transformedGallery
 });

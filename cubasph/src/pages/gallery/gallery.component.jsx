@@ -2,6 +2,7 @@ import React from 'react';
 
 import './gallery.styles.scss';
 import {firestore, convertGallerySnapshotToMap} from '../../firebase/firebase.utils';
+import {galleryUpdateState} from '../../redux/gallery/gallery.actions';
 
 class GalleryPage extends React.Component {
     
@@ -11,8 +12,8 @@ class GalleryPage extends React.Component {
         const collectionRef = firestore.collection('gallery');
 
         collectionRef.onSnapshot(async snapshot => {
-            const gallerySnapshot = convertGallerySnapshotToMap(snapshot);
-            console.log(gallerySnapshot);
+            const galleryRetreivedInformation = convertGallerySnapshotToMap(snapshot);
+            galleryUpdateState(galleryRetreivedInformation);
         //     console.log(snapshot.data());
         //     const {name, country,  description, imageUrl} = snapshot.data();
         //     console.log(name);

@@ -1,0 +1,22 @@
+.Gallery-Page-Component{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .title{
+        position: relative;
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-family: "Lato";
+        font-size: 180%;
+    }
+
+    .gallery-items{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        gap: px;
+    }
+
+}
+

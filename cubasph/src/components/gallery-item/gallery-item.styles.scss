@@ -1,0 +1,38 @@
+.galleryItem-group{
+    width: 22vw;
+    height: 380px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+    margin-bottom: 40px;
+    margin-left: 6%;
+    margin-top: 5%;
+    padding-top: 5px;
+
+    img{
+        max-width: 90%;
+        max-height: 100%;
+        background-size: cover;
+    }
+
+    .galleryItem-group-name-information{
+        width: 100%;
+        height: 5%;
+        display: flex;
+        justify-content: center;
+        font-size: 120%;
+        margin-top: 5px;
+
+        .link{
+            text-decoration: none;
+            color:black;
+            cursor: pointer;
+            font-size: 120%;
+        }
+
+        
+    }
+        
+}

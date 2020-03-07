@@ -17,7 +17,7 @@ const header = ({currentUser}) => (
             </Link>
             <div className="options">
                 <Link className="option" to="/gallery">
-                    Gallery
+                    Galería
                 </Link>
                 <Link className="option" to="/about">
                     About

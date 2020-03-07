@@ -21,5 +21,5 @@ export const selectGalleryCollectionForPreview = createSelector (
  createSelector(
      [selectGalleryItems],
      gallery => 
-         (gallery ? gallery[collectionUrlParam] : null)
+         (gallery ? gallery[collectionUrlParam.split(" ").join("")]: null)
  );

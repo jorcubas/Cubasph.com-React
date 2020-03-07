@@ -37,7 +37,6 @@ class GalleryPage extends React.Component {
             <div className='shop-page'>
                 <Route exact path={`${match.path}`} render = {props => (<GalleryWithSpinner isLoading={loading} {...props} />)} />
                 <Route path={`${match.path}/:galleryItemID`} render = {props => (<GalleryItmeWithSpinner isLoading={loading} {...props} />)} />
-                
             </div>
         );
     }

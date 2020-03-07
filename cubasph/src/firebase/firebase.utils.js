@@ -42,11 +42,13 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 
 export const convertGallerySnapshotToMap = (galleryCollection) => {
     const itemCollection = galleryCollection.docs.map( doc =>  {
-        const {name, description, imageUrl, country, location} = doc.data();
+        const {name, description, imageUrl, country, location, linkUrl} = doc.data();
         return{
+            id: doc.id,
             name, 
             description,
             imageUrl,
+            linkUrl,
             country,
             location
         }
@@ -54,7 +56,7 @@ export const convertGallerySnapshotToMap = (galleryCollection) => {
 
     console.log(itemCollection);
     return itemCollection.reduce((accumulator, collection) => {
-        accumulator[collection.name.toLowerCase()] = collection;
+        accumulator[collection.id] = collection;
         return accumulator;
     }, {});
 }

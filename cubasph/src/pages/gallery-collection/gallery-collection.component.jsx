@@ -14,8 +14,8 @@ const GalleryCollection = ({data}) => (
         </div>
         <div className="gallery-items">
         {
-            data.map(item => (
-                <GalleryItem key={item.name} item={item}/>
+            data.map(({id, ...otherSectionProps}) => (
+                <GalleryItem key={id} {...otherSectionProps}/>
             ))
         }
         </div>

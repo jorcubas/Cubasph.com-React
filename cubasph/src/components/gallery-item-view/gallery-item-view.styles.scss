@@ -1,0 +1,55 @@
+.gallery-item-view {
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 120px;
+
+    .item-view-space{
+        display: flex;
+        flex-direction: column;
+        width: 28%;
+        height: 100%;
+        align-items: center;
+        margin-right: 110px;
+        .galery-item-image{
+            max-width: 110%;
+            max-height: 100%;
+            margin-right: 20px;
+            
+        }
+
+        .gallery-item-button{
+            left: 30%;
+            margin-left: 20px;
+        }
+    }
+
+    .gallery-item-information{
+
+        .item-title{
+            font-family: "Lato";
+            text-align: center;
+            margin-bottom: 10%;
+        }
+
+        p{
+            font-size: 110%;
+        }
+        
+        h2{
+            font-family: "Lato";
+        }
+
+        h4{
+            font-family: "Lato";
+        }
+
+        width: 35%;
+        text-align: justify;
+    }
+}
+

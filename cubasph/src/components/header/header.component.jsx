@@ -10,7 +10,7 @@ import { auth } from '../../firebase/firebase.utils';
 
 const header = ({currentUser}) => (
     <div className="header">
-        convertGalleryItemsToSnapShot();
+        
         <div className="header-elements">
             <Link className="icon" to="/">
                 CubasPH

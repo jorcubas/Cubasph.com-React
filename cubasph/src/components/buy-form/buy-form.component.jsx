@@ -5,8 +5,7 @@ import {createStructuredSelector} from 'reselect';
 import './buy-form.styles.scss';
 
 import {toggleBuyForm} from '../../redux/buy-form/buy-form.actions';
-// import {addSubmission} from '../../firebase/firebase.utils';
-import {setEmailSubmission, setBodySubmission} from '../../redux/submission/submission.actions';
+import {setEmailSubmission, setBodySubmission, setSubmissionNull} from '../../redux/submission/submission.actions';
 import {selectSubmissionEmail, selectSubmissionBody} from '../../redux/submission/submission.selectors';
 import {addSubmission} from '../../redux/submission/submission.utils';
 
@@ -41,6 +40,7 @@ class BuyForm extends React.Component {
                             onClick={() =>{
                                 addSubmission(this.props.email, this.props.body, this.props.name);
                                 this.props.toggleBuyFormHidden();
+                                this.props.submissionNull();
                             }}>
                             Mandar Cotización
                         </button>
@@ -60,7 +60,8 @@ const mapStateToProps = createStructuredSelector ({
 const mapDispatchToProps = dispatch => ({
     toggleBuyFormHidden: () => dispatch(toggleBuyForm()),
     emailSubmission: objects => dispatch(setEmailSubmission(objects)),
-    bodySubmission: objects => dispatch(setBodySubmission(objects))
+    bodySubmission: objects => dispatch(setBodySubmission(objects)),
+    submissionNull: () => dispatch(setSubmissionNull())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(BuyForm);

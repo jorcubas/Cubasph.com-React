@@ -9,3 +9,7 @@ export const setBodySubmission = object => ({
     type: submissionTypes.SET_BODY_SUBMISSION,
     payload: object
 });
+
+export const setSubmissionNull = () => ({
+    type: submissionTypes.SET_SUBMISSION_NULL
+});

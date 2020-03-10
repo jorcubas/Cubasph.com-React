@@ -18,6 +18,12 @@ const submissionReducer = (state = INITIAL_STATE, action) => {
                 ...state,
                 body: action.payload
             }
+            case submissionTypes.SET_SUBMISSION_NULL:
+                return{
+                    ...state,
+                    email: '',
+                    body: ''
+                }            
         default:
             return state;
     }

@@ -1,0 +1,5 @@
+export const submissionTypes = {
+    SET_EMAIL_SUBMISSION: 'SET_EMAIL_SUBMISSION',
+    SET_BODY_SUBMISSION: 'SET_BODY_SUBMISSION'
+}
+

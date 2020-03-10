@@ -1,7 +1,7 @@
 import BuyFormTypes from './buy-form.types';
 
 const INITIAL_STATE = {
-    hidden: false
+    hidden: true
 }
 
 const BuyContactReducer = (state=INITIAL_STATE, action) => {

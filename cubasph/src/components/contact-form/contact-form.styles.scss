@@ -1,0 +1,169 @@
+@media(min-width: 1200px) {
+    .Contact-Form{
+        width:100%;
+        height: 100vh;    
+        background-color: black;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .Contact-Form-Window{
+            width: 50%;
+            height: 80%;
+            background-color: black;
+            // top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            color: white;
+
+            h1{
+                display: flex;
+                justify-content: center;
+            }
+
+            .Contact-Form-Info{
+                width: 80%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                // align-items: center;
+                justify-content: flex-start;
+                position: relative;
+
+                .close-button{
+                    position: absolute;
+                    right: 30px;
+                    font-size: 50px;
+                    transform: rotate(45deg);
+                    cursor: pointer;
+                    }
+
+                .personal-info{
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
+                .input-name{
+                    margin: 4% 0%;
+                    margin: 4% 0% 4% 0%;
+                    width: 48%;
+                }
+
+                .input-email{
+                    margin: 4% 0% 4% 0%;
+                    padding: 2% 0%;             
+                    width: 48%;
+                }
+            }
+
+            .input-subject{
+                margin: 4% 0%;
+                padding: 2% 0%;
+            }
+
+            .input-body{
+                margin: 5% 0%;
+                padding: 3% 0%;
+                
+            }
+
+            .button{
+                display: flex;
+                justify-content: center;
+                button{
+                    width: 50%;
+                    padding: 2% 6%;
+                    font-size: 80%;
+                    background-color: black;
+                    color: white;
+                    border: solid white;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+    }
+}
+
+// // @media(max-width: 1200px) {
+// //     .Buy-Form{
+// //         width:100%;
+// //         height: 100vh;    
+// //         background-color: rgba(0,0,0,0.7);
+// //         position: absolute;
+// //         top:0;
+// //         display: flex;
+// //         justify-content: center;
+// //         align-items: center;
+
+
+// //         .Buy-Form-Window{
+// //             width: 70%;
+// //             height: 500;
+// //             background-color: white;
+// //             top: 0;
+// //             display: flex;
+// //             flex-direction: row;
+// //             align-items: start;
+// //             justify-content: center;
+// //             position: relative;
+            
+// //             .Buy-Form-Info{
+// //                 display: flex;
+// //                 flex-direction: column;
+// //                 align-items: center;
+                
+// //                 .close-button{
+// //                     position: absolute;
+// //                     right: 30px;
+// //                     font-size: 50px;
+// //                     transform: rotate(45deg);
+// //                     cursor: pointer;
+// //                 }
+
+// //                 img{
+// //                     max-width: 20%;
+// //                 }
+
+// //                 h1{
+// //                     text-align: center;
+// //                     margin-top: 75px;
+// //                     font-size: 130%
+// //                 }
+// //                 input{
+// //                     margin-bottom: 40px;
+// //                     margin-top: 25px;
+// //                     width: 80%;
+// //                     height: 40px;
+// //                 }
+
+// //                 p{
+// //                     margin:0;
+// //                     padding: 0;
+// //                     width:60%;
+// //                     font-size: 70%;
+// //                     text-align: center;
+// //                 }
+
+// //                 button{
+// //                     margin-bottom: 40px;
+// //                     margin-top: 25px;
+// //                     width: 60%;
+// //                     height: 40px;
+// //                     background-color: black;
+// //                     color: white;
+// //                     border:none;
+// //                     cursor: pointer;
+// //                 }
+// //             }
+
+// //         }
+// //     }
+// // }

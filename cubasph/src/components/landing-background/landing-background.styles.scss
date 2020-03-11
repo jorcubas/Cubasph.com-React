@@ -1,29 +1,132 @@
-.background-container {
-    height: 94vh;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../../assets/images/IMG_8895.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    .background-container {
+        height: 94vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../../assets/images/IMG_8895.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    
+        .title-text-box {
+            font-family: 'Lato';
+            font-weight: 100;
+            position: absolute;;
+            top: 50%;
+            left: 64%;
+            transform: translate(-50%, -50%);
+    
+            h1{
+                color: white;
+                font-size: 200%;
+                word-spacing: 4px;
+                letter-spacing: 2px;
+                padding:0%;
+            }
+        }
+    }
 
-    .title-text-box {
-        font-family: 'Lato';
-        font-weight: 100;
-        position: absolute;;
-        top: 50%;
-        left: 64%;
-        transform: translate(-50%, -50%);
 
-        h1{
-            color: white;
-            font-size: 200%;
-            word-spacing: 4px;
-            letter-spacing: 2px;
-            padding:0%;
+@media only screen and (max-width: 991.98px) {
+    .background-container {
+        height: 94vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../../assets/images/IMG_8895.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    
+        .title-text-box {
+            font-family: 'Lato';
+            font-weight: 100;
+            font-size: 100%;
+            position: absolute;;
+            top: 50%;
+            left: 64%;
+            transform: translate(-50%, -50%);
+    
+            h1{
+                color: white;
+                font-size: 200%;
+                word-spacing: 4px;
+                letter-spacing: 2px;
+                padding:0%;
+            }
         }
     }
 }
+
+
+
+@media only screen and (max-width: 767.98px) {
+    .background-container {
+        height: 94vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../../assets/images/IMG_8895.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    
+        .title-text-box {
+            font-family: 'Lato';
+            font-weight: 100;
+            font-size: 100%;
+            position: absolute;;
+            top: 50%;
+            left: 64%;
+            transform: translate(-50%, -50%);
+    
+            h1{
+                color: white;
+                font-size: 200%;
+                word-spacing: 4px;
+                letter-spacing: 2px;
+                padding:0%;
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .background-container {
+        height: 94vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../../assets/images/IMG_8895.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 40% 50%;
+        background-attachment: fixed;
+    
+        .title-text-box {
+            font-family: 'Lato';
+            font-weight: 100;
+            font-size: 100%;
+            position: absolute;;
+            top: 50%;
+            left: 64%;
+            transform: translate(-50%, -50%);
+    
+            h1{
+                color: white;
+                font-size: 200%;
+                word-spacing: 4px;
+                letter-spacing: 2px;
+                padding:0%;
+            }
+        }
+    }
+}
+
 

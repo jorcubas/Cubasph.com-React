@@ -10,10 +10,11 @@ import EmailSection from '../../components/subscribe-section/subscribe-section.c
 const HomePage = () => (
     <div>
         <LandingBackground/>    
-        <GalleryAd/>
+        <GalleryAd/>        
         <PrintsAd/>
         <EmailSection/>
     </div>
 );
+
 
 export default HomePage;

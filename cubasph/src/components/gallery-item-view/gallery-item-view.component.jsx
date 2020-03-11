@@ -31,7 +31,7 @@ const GalleryItemView = ({ Item, Form }) => {
         </div>
     );
 };
-
+ 
 
 const mapStateToProps = (state, ownProps) => ({
     Form: selectBuyFormHidden('hi')(state),

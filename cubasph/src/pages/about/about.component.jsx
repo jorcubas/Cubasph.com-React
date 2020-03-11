@@ -3,7 +3,7 @@ import React from 'react';
 import './about.styles.scss';
 
 import Image from './Cubas1.jpg';
-import ContactButton  from '../../components/contact-button/contact-button.component';
+
 
 const aboutPage = () => (
     <div className="about-info">
@@ -14,9 +14,10 @@ const aboutPage = () => (
             o un recuerdo es algo que no tiene precio. Las fotgrafías de paisajes son de las ftografías que mas me 
             apasionan. Por lo tanto el poder tener una plataforma donde pueda vender mis fotografías siempre ha sido 
             un pequeño sueño mío. Por eso cree esta plataforma como página web donde se pueden cotizar mis 
-            fotografías y enmarcarlas para diferentes ambientes que queden a imaginción de las personas.  </p>        
-            <ContactButton/>
+            fotografías y enmarcarlas para diferentes ambientes que queden a imaginción de las personas.  </p>                    
+            <button>Contactar</button>
         </div>
+        
     </div>
 )
 

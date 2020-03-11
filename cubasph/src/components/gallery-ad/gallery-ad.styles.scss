@@ -1,56 +1,202 @@
-.gallery-section-imageArea img{
-    width:60%;
-    margin: 20% 0%;
-}
+@media only screen and (min-width: 1200px) {
+    .gallery-section{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 70px 0;
+        overflow: hidden;
 
-.gallery-section-title{
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    margin-left: 8%;
-    margin-top: 9%;
-}
+        .gallery-section-title{
+            width: 360px;
+            font-family: "Lato";
+            font-size: 180%;
+            margin-right: 70px;
+        
+            }
 
-.titleName-gallery{
-    font-family: "Lato";
-    font-size: 390%;
-    word-spacing: 3px;
-    letter-spacing: 3px;
-}
+        }
+        .frame-button-title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            button{
+                font-size: 130%;
+                padding: 10px 50px;
+                background-color: black;
+                color: white;
+                border: none;
+                cursor: pointer;
+                margin-top: 30px;                
+                
+        }        
+    }
+}   
 
-.gallery-section-imageArea{
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: 5px;
-}
 
-li:nth-child(1){
-    grid-column: 3/span 2;
-    grid-row: 1/span 2;
-    transition: grid-column 0.5s, grid-row 0.5s;
-    height:70%;
-}
-li:nth-child(2){
-    grid-column: 5/span 2;
-    grid-row: 1/span 2;
-    transition: grid-column 0.5s, grid-row 0.5s;
-}
-li:nth-child(3){
-    grid-column: 4/span 2;
-    grid-row: 1/span 2;
-    transition: padding-left 3s, padding-top 3s;
-}     
+//     @media only screen and (max-width: 575.98px) {
+//     .gallery-section{
+//         width: 100%;
+//         height: 70%;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         margin: 70px 0;
+//         overflow: hidden;
 
-li:nth-child(1):hover{
-    grid-column: 3/span 2;
-    grid-row: 1/span 2;
+//         .gallery-section-title{
+//             // width: 120px;
+//             font-family: "Lato";
+//             font-size: 120%;
+//             text-align: center;
+//             margin: 0 0;
+//             // margin-right: px
+//         }
+
+//         button{
+//             font-size: 100%;
+//             padding: 3% 15%;
+//             border-width: 100%;
+//             background-color: black;
+//             color: white;
+//             border: none;
+//             cursor: pointer;
+//             text-decoration: none;
+//             margin-top: 9%;
+//         }
+
+//         img{
+//             max-width: 70%;
+//         }
+//     }
+// }
+
+// @media only screen and (max-width: 991.98px) {
+//     .gallery-section{
+//         width: 100%;
+//         height: 70%;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         margin: 70px 0;
+//         overflow: hidden;
+
+//         .gallery-section-title{
+//             // width: 120px;
+//             font-family: "Lato";
+//             font-size: 120%;
+//             text-align: center;
+//             margin: 0 0;
+//             // margin-right: px
+//         }
+
+//         button{
+//             font-size: 100%;
+//             padding: 3% 15%;
+//             border-width: 100%;
+//             background-color: black;
+//             color: white;
+//             border: none;
+//             cursor: pointer;
+//             text-decoration: none;
+//             margin-top: 5%;
+//         }
+
+//         img{
+//             max-width: 70%;
+//         }
+//     }
+// }
+
+
+
+// @media only screen and (max-width: 767.98px) {
+//     .gallery-section{
+//         width: 100%;
+//         height: 70%;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         margin: 70px 0;
+//         overflow: hidden;
+
+//         .gallery-section-title{
+//             // width: 120px;
+//             font-family: "Lato";
+//             font-size: 120%;
+//             text-align: center;
+//             margin: 0 0;
+//             // margin-right: px
+//         }
+
+//         button{
+//             font-size: 100%;
+//             padding: 3% 15%;
+//             border-width: 100%;
+//             background-color: black;
+//             color: white;
+//             border: none;
+//             cursor: pointer;
+//             text-decoration: none;
+//             margin-top: 5%;
+//         }
+
+//         img{
+//             max-width: 70%;
+//         }
+//     }
+// }
+
+
+@media only screen and (max-width: 1200px) {
+    .gallery-section{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 70px 0;
+        
+        .gallery-section-title{
+            // width: 120px;
+            font-family: "Lato";
+            font-size: 120%;
+            text-align: center;
+            margin: 0 0;
+            // margin-right: px
+        }
+
+        .frame-button-title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                max-width: 70%;
+            }
+
+            button{
+                font-size: 100%;
+                padding: 3% 5%;
+                border-width: 100%;
+                background-color: black;
+                color: white;
+                border: none;
+                cursor: pointer;
+                text-decoration: none;
+                margin-top: 9%;
+            }
+
+        }
+
+    }
 }
-li:nth-child(2):hover{
-    grid-column: 5/span 2;
-    grid-row: 1/span 2;
-}
-li:nth-child(3):hover{
-    padding-top:35%;
-    padding-left: 35%;
-}               

@@ -26,11 +26,17 @@ class BuyForm extends React.Component {
 
 
     render(){
-        return(
+        return( 
             <div className="Buy-Form">
                 <div className="Buy-Form-Window">
                     <div className="Buy-Form-Info">
-                        <div className="close-button" onClick={this.props.toggleBuyFormHidden}>+</div>
+                        <div 
+                            className="close-button" 
+                            onClick={ () => {this.props.toggleBuyFormHidden();
+                                            this.props.submissionNull();
+                                    }}>
+                                +
+                        </div>
                         <h1>{this.props.name}</h1>
                         <img src={this.props.imageUrl} alt="small buying frame"></img>
                         <input placeholder="E-mail" onChange={this.handleEmailChange} value={this.props.email}></input>

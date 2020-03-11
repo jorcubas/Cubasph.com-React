@@ -1,6 +1,6 @@
 import {createSelector} from 'reselect';
 
-const selectContact = state => state.contactReducer;
+const selectContact = state => state.contact;
 
 export const selectContactName= createSelector(
     [selectContact],
@@ -20,4 +20,9 @@ export const selectContactSubject= createSelector(
 export const selectContactBody= createSelector(
     [selectContact],
     contact => contact.body
+);
+
+export const selectToggleContact = createSelector(
+    [selectContact],
+    contact => contact.hidden
 );

@@ -19,3 +19,11 @@ export const setContactBody = object => ({
     type: contactTypes.SET_BODY_STATE,
     payload: object
 });
+
+export const setContactStateNull = () => ({
+    type: contactTypes.SET_CONTACT_STATE_NULL
+});
+
+export const toggleContactForm = () => ({
+    type: contactTypes.TOGGLE_CONTACT_FORM
+});

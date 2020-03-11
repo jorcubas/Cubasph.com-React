@@ -4,11 +4,12 @@ const INITIAL_STATE = {
     name: '',
     email: '',
     subject: '',
-    body: ''
+    body: '',
+    hidden: false
 }
 
 const contactReducer = (state = INITIAL_STATE, action) => {
-    switch(action.types){
+    switch(action.type){
         case contactTypes.SET_NAME_STATE:
             return{
                 ...state,
@@ -18,21 +19,36 @@ const contactReducer = (state = INITIAL_STATE, action) => {
         case contactTypes.SET_EMAIL_STATE:
             return{
                 ...state,
-                name: action.payload
+                email: action.payload
             }
 
         case contactTypes.SET_SUBJECT_STATE:
             return{
                 ...state,
-                name: action.payload
+                subject: action.payload
             }
 
         case contactTypes.SET_BODY_STATE:
             return{
                 ...state,
-                name: action.payload
+                body: action.payload
             }
 
+        case contactTypes.SET_CONTACT_STATE_NULL:
+            return{
+                ...state,
+                name: '',
+                email: '',
+                subject: '',
+                body: ''
+            }    
+
+        case contactTypes.TOGGLE_CONTACT_FORM:
+            return{
+                ...state,
+                hidden: !state.hidden
+            }            
+        
         default:
             return state;
     }

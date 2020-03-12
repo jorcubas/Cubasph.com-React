@@ -4,6 +4,7 @@ import './gallery-ad.styles.scss';
 
 import Frames from './Frames.png';
 import GalleryButton from '../../components/gallery-button/gallery-button.component';
+import {Link} from 'react-router-dom';
 
 const GalleryAd = () => (
     <div className="gallery-section">
@@ -12,7 +13,7 @@ const GalleryAd = () => (
         </div>
         <div className="frame-button-title">
             <img src={Frames} alt="Frame Examples"/>
-            <button>Ver Galería</button>
+            <Link className='custom-button' to="/gallery">Ver Galería</Link>
         </div>
     </div>
 );

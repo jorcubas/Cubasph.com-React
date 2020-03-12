@@ -11,7 +11,10 @@ const GalleryItem = ({name, imageUrl, linkUrl, match}) => {
     // const {name, imageUrl} = item;
     return(
         <div className='galleryItem-group'>
-            <img src= {imageUrl} alt="Photography Gallery Item"/> 
+            
+            <Link className="img-link" to={`${match.url}/${linkUrl}`}>
+                <img src= {imageUrl} alt="Photography Gallery Item"/> 
+            </Link>
             <div className="galleryItem-group-name-information">
                 <Link className="link" to={`${match.url}/${linkUrl}`}>{name}</Link>
             </div>
@@ -19,6 +22,8 @@ const GalleryItem = ({name, imageUrl, linkUrl, match}) => {
         // onClick={() => history.push(`${match.url}${linkUrl}`)}
     )
 }; 
+
+
 
 // const mapStateToProps = createStructuredSelector({
 //     galleryItems: selectGalleryItems

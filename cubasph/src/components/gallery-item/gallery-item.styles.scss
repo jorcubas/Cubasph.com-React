@@ -15,17 +15,21 @@
     &:hover {
         
 
-        & img {
+        .img-link {img {
             transform: scale(1.05);
             transform: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-        }
+        }}
     }    
 
-    img{
-        max-width: 80%;
+    .img-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        img{
+        max-width: 70%;
         max-height: 100%;
         background-size: cover;
-    }
+    }}
 
     .galleryItem-group-name-information{
         width: 100%;
@@ -33,7 +37,7 @@
         display: flex;
         justify-content: center;
         font-size: 120%;
-        margin-top: 5px;
+        margin-top: 10px;
 
         .link{
             text-decoration: none;

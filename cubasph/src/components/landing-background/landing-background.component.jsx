@@ -6,7 +6,7 @@ import CustomButton from '../custom-button/custom-button.component';
 const landingBackground = () => (
     <div className="background-container">
         <div className='title-text-box'>
-            <h1> Landscape Photography Prints<br/> By Jorge Cubas</h1>
+            <h1> Fotografías de Paisajes <br/> Por Jorge Cubas</h1>
             <CustomButton/>
         </div>
         

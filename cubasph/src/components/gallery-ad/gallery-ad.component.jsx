@@ -13,9 +13,9 @@ const GalleryAd = () => (
         </div>
         <div className="frame-button-title">
             <img src={Frames} alt="Frame Examples"/>
-            <Link className='custom-button' to="/gallery">Ver Galería</Link>
+            <button className='custom-button' to="/gallery">Ver Galería</button>
         </div>
-    </div>
+    </div> 
 );
 
 export default GalleryAd;

@@ -4,7 +4,7 @@ import './instagram-button.styles.scss';
 
 const instagramButton = () => (
     <div className="ButtonContainer">
-        <a href="https://www.instagram.com/jorcubas/" target="_blank" className="InstagramButton">Follow</a>
+        <a href="https://www.instagram.com/jorcubas/" target="_blank" className="InstagramButton">Seguir</a>
     </div>
 );
 

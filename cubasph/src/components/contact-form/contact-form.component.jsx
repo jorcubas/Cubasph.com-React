@@ -56,13 +56,13 @@ class ContactForm extends React.Component {
                         </div>
                         <input className="input-subject" placeholder="Asunto" onChange={this.handleSubjectChange} value={this.props.subject}></input>
                         <textarea rows="5" column="25" className="input-body" placeholder="Detalle Adicional" onChange={this.handleBodyChange} value={this.props.body}></textarea>
-                        <p>La cotización será respondida directamente por el correo del formulario. </p>
+                        <p className="paragraph">El mensaje será respondido directamente por el correo del formulario. </p>
                         <div className="button">
                             <button onClick={() => {
                                 addContact(this.props.name, this.props.email, this.props.subject, this.props.body);
                                 this.props.toggleContactForm();
                             }}> Mandar Cotización</button>
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>

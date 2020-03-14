@@ -4,10 +4,11 @@ import {createStructuredSelector} from 'reselect';
 
 import './about.styles.scss';
 
-import Image from './Cubas1.jpg';
+import Image from './Cubas2.jpg';
 import ContactForm from '../../components/contact-form/contact-form.component';
 import {selectToggleContact} from '../../redux/contact/contact.selectors';
 import {toggleContactForm} from '../../redux/contact/contact.actions';
+
 
 
 class aboutPage extends React.Component {
@@ -30,11 +31,11 @@ class aboutPage extends React.Component {
                     <button onClick ={() => {
                         this.props.toggleContactForm();
                     }}>Contactar</button>
-                </div>        
+                </div>         
                 {
                     this.props.hiddenForm ? (<ContactForm/>) : (null)
                 }
-            
+             
             </div>
         )
     }

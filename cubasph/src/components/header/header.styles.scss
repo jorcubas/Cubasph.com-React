@@ -12,15 +12,20 @@
             display: flex;
 
             .icon {
-                width: 100vh;
-                height: 0%;
+                width: 50%;
+                height: 50%;
                 display: flex;
                 justify-content: flex-start;
                 padding:0%;
                 cursor: pointer;
                 text-decoration: none;
                 color: #fff;   
-                font-size: 140%;             
+                margin-left: 3%;
+                // font-size: 140%;             
+                .logo{
+                    width: 7%;
+                    height: 7%;
+                }   
             }     
 
             .options {
@@ -32,7 +37,7 @@
         
         
                 .option {
-                    padding: 0 15px;
+                    padding: 2px 15px 3px 3px;
                     cursor: pointer;
                     text-decoration: none;
                     font-size: 120%;
@@ -56,16 +61,21 @@
             display: flex;
 
             .icon {
-                width: 100vh;
-                height: 0%;
+                width: 50%;
+                height: 50%;
                 display: flex;
                 justify-content: flex-start;
                 padding:0%;
                 cursor: pointer;
                 text-decoration: none;
                 color: #fff;   
-                font-size: 140%;             
-            }     
+                margin-left: 3%;
+                // font-size: 140%;             
+                .logo{
+                    width: 45px;
+                    height: 40px;
+                }   
+            }        
 
             .options {
                 width: 100vh;
@@ -76,10 +86,10 @@
         
         
                 .option {
-                    padding: 5px 6px;
+                    padding: 5px 9px;
                     cursor: pointer;
                     text-decoration: none;
-                    font-size: 110%;
+                    font-size: 115%;
                     color: white;
                 }
             }

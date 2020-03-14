@@ -10,7 +10,7 @@ const PrintsAd = () => (
         <img src={IphoneImage} alt="Display" className="image-go"/>
         <div className="title">
             <h1> Sigueme En <br/> Instagram Para <br/> Nuevas Fotografías</h1>                
-            <a href="https://www.instagram.com/jorcubas/" target="_blank">Follow</a> 
+            <a href="https://www.instagram.com/jorcubas/" target="_blank">Seguir</a> 
         </div>            
     </div>
 ); 

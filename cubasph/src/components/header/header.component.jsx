@@ -7,25 +7,27 @@ import {convertGalleryItemsToSnapShot} from '../../firebase/firebase.utils';
 import './header.styles.scss';
 
 import { auth } from '../../firebase/firebase.utils';
+import {ReactComponent as Logo2}  from  '../../assets/images/logoFinal.svg';
+// import { ReactComponent as Logo } from '../../assets/crown.svg';
 
 const header = ({currentUser}) => (
     <div className="header">
         <div className="header-elements">
             <Link className="icon" to="/">
-                CubasPH
+                <Logo2 className="logo" />
             </Link>
             <div className="options">
                 <Link className="option" to="/gallery">
                     Galería
                 </Link>
                 <Link className="option" to="/about">
-                    About
+                    Sobre Mi
                 </Link>            
                 {
                     currentUser ?
-                    <div className="option" onClick={() => auth.signOut()}>Sign Out</div>
+                    <div className="option" onClick={() => auth.signOut()}>Cerrar Sesión</div>
                     :
-                    <Link className='option' to='./signin'>SignIn</Link>
+                    <Link className='option' to='/signin'>Ingresar</Link>
                 }
             </div>
         </div>

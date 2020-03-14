@@ -23,8 +23,20 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            &:hover {
+        
+
+                .custom-button{button{ 
+                    // color: black;
+                    background-color: white;
+                    transform: scale(1.15);
+                    transition: transform 0.5s, background-color 0.5s;
+                }}
+            }    
+        
             
-            Link{
+            .custom-button{
                 font-size: 130%;
                 padding: 10px 50px;
                 background-color: black;
@@ -34,6 +46,9 @@
                 margin-top: 30px;                
                 
         }        
+
+        
+        
     }
 }   
 

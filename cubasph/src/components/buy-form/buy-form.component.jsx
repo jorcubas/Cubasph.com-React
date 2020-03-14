@@ -8,6 +8,7 @@ import {toggleBuyForm} from '../../redux/buy-form/buy-form.actions';
 import {setEmailSubmission, setBodySubmission, setSubmissionNull} from '../../redux/submission/submission.actions';
 import {selectSubmissionEmail, selectSubmissionBody} from '../../redux/submission/submission.selectors';
 import {addSubmission} from '../../redux/submission/submission.utils';
+import {selectUserState} from '../../redux/user/user.selector';
 
 
 class BuyForm extends React.Component {
@@ -39,16 +40,18 @@ class BuyForm extends React.Component {
                         </div>
                         <h1>{this.props.name}</h1>
                         <img src={this.props.imageUrl} alt="small buying frame"></img>
+
+
                         <input placeholder="E-mail" onChange={this.handleEmailChange} value={this.props.email}></input>
                         <input placeholder="Detalle Adicional" onChange={this.handleBodyChange} value={this.props.body}></input>
-                        <p>La cotización será respondida directamente por el correo del formulario. </p>
+                        <p>La cotización será mandada directamente al correo del formulario. </p>
                         <button 
                             onClick={() =>{
                                 addSubmission(this.props.email, this.props.body, this.props.name);
                                 this.props.toggleBuyFormHidden();
                                 this.props.submissionNull();
                             }}>
-                            Mandar Cotización
+                            Solicitar Cotización
                         </button>
                     </div>
                 </div>
@@ -60,7 +63,9 @@ class BuyForm extends React.Component {
 
 const mapStateToProps = createStructuredSelector ({
     email: selectSubmissionEmail,
-    body: selectSubmissionBody
+    body: selectSubmissionBody,
+    currentUser: selectUserState
+
   });
 
 const mapDispatchToProps = dispatch => ({

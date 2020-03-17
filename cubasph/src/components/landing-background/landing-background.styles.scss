@@ -24,6 +24,31 @@
                 letter-spacing: 2px;
                 padding:0%;
             }
+
+            .custom-button:hover{
+                background-color: white;
+                color: black;
+                border: none;
+                transform: scale(1.05);
+                transition: transform 0.5s;
+            }            
+
+            .custom-button {
+                color: white;
+                background-color: black;
+                width: auto;
+                top: 50%;
+                right: 67%;
+                border: none;
+                margin: 50px 0;
+                
+                padding: 10px 30px;
+                cursor: pointer;
+                font-family: "Arial";
+                font-size: 120%;
+                text-decoration: none;
+                transition: transform 0.5s;   
+            }
         }
     }
 

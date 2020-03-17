@@ -21,7 +21,7 @@ const GalleryItemView = ({ Item, Form }) => {
                 <div className="item-description-group">
                     <h2 className="item-description">Descripción</h2>
                     <p>{Item.description}</p>
-                </div>
+                </div> 
                 <div className="item-country">
                     <h2>Ubicación</h2>
                     <p>{Item.location}, {Item.country}</p>

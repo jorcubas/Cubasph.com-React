@@ -39,7 +39,7 @@ class SubscribeSection extends React.Component {
                     </input>
                     <button 
                         onClick={this.handleSubscription}>
-                        Suscribirse
+                        Suscribirse 
                     </button>
                 </div>
             </div>

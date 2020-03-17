@@ -13,8 +13,8 @@ const GalleryAd = () => (
         </div>
         <div className="frame-button-title">
             <img src={Frames} alt="Frame Examples"/>
-            <button className='custom-button' to="/gallery">Ver Galería</button>
-        </div>
+            <Link className='custom-button' to="/gallery">Ver Galería</Link>
+        </div> 
     </div> 
 );
 

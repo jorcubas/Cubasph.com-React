@@ -32,6 +32,19 @@
                 font-size: 120%;
             }
 
+            button:hover{
+                // display: flex;
+                // justify-content: center;
+                align-items: center;
+                padding: 2% 9%;
+                background-color: white;
+                color: black;
+                border: solid black;
+                cursor: pointer;
+                font-size: 120%;
+                text-align: center;
+            }            
+
 
             button{
                 // display: flex;

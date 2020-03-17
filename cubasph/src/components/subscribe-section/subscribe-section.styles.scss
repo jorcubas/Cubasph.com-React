@@ -26,6 +26,12 @@
                 font-size: 150%;
             }
 
+            button:hover{
+                color: black;
+                background-color: white;
+                border: solid black;
+            }
+
             button{
                 color: white;
                 background-color: black;
@@ -34,6 +40,7 @@
                 margin-top: 30px;
                 padding: 10px 15px;
                 font-size: 140%;
+                border: solid white;
             }
         }
     }

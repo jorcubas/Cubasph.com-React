@@ -61,7 +61,7 @@ class ContactForm extends React.Component {
                             <button onClick={() => {
                                 addContact(this.props.name, this.props.email, this.props.subject, this.props.body);
                                 this.props.toggleContactForm();
-                            }}> Mandar Cotización</button>
+                            }}> Contactar</button>
                         </div> 
                     </div>
                 </div>
